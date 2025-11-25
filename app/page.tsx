@@ -114,7 +114,11 @@ export default function Home() {
                 </Button>
               </div>
               <div className="flex items-center justify-center">
-                <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-96" />
+                <img 
+                  src="/images/about-section-image.jpg" 
+                  alt="About SimplePage" 
+                  className="rounded-xl w-full h-96 object-cover"
+                />
               </div>
             </div>
           </div>
@@ -159,3 +163,4 @@ export default function Home() {
     </div>
   )
 }
+
