@@ -77,7 +77,7 @@ export default function Home() {
                 <CardHeader>
                   <div className="flex justify-center">
                     <img 
-                      src="/images/customization-icon.png" 
+                      src="/videos/customization-icon-animated.gif" 
                       alt="Easy to Customize" 
                       className="w-16 h-16 mx-auto"
                     />
@@ -181,6 +181,7 @@ export default function Home() {
     </div>
   )
 }
+
 
 
 
