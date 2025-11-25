@@ -7,18 +7,20 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
-      <header className="px-4 lg:px-6 h-14 flex items-center border-b">
+      <header className="px-4 lg:px-6 h-14 flex items-center border-b border-primary/20">
         <div className="flex items-center justify-center">
-          <span className="font-bold text-xl">SimplePage</span>
+          <span className="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-foreground to-primary">
+            SimplePage
+          </span>
         </div>
         <nav className="ml-auto flex gap-4 sm:gap-6">
-          <a className="text-sm font-medium hover:underline underline-offset-4" href="#features">
+          <a className="text-sm font-medium hover:underline underline-offset-4 text-primary" href="#features">
             Features
           </a>
-          <a className="text-sm font-medium hover:underline underline-offset-4" href="#about">
+          <a className="text-sm font-medium hover:underline underline-offset-4 text-primary" href="#about">
             About
           </a>
-          <a className="text-sm font-medium hover:underline underline-offset-4" href="#contact">
+          <a className="text-sm font-medium hover:underline underline-offset-4 text-primary" href="#contact">
             Contact
           </a>
         </nav>
@@ -26,11 +28,11 @@ export default function Home() {
       
       {/* Hero Section */}
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
+        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-br from-background to-primary/5 dark:from-background dark:to-primary/10">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-foreground to-primary">
                   Welcome to SimplePage
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
@@ -38,10 +40,10 @@ export default function Home() {
                 </p>
               </div>
               <div className="space-x-4">
-                <Button asChild>
+                <Button asChild className="bg-primary hover:bg-primary/90">
                   <a href="#features">Get Started</a>
                 </Button>
-                <Button variant="outline" asChild>
+                <Button variant="outline" asChild className="border-primary text-primary hover:bg-primary/10">
                   <a href="#about">Learn More</a>
                 </Button>
               </div>
@@ -56,16 +58,18 @@ export default function Home() {
               Features
             </h2>
             <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3">
-              <Card>
+              <Card className="border-primary/20 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <CardHeader>
                   <div className="flex justify-center">
-                    <img 
-                      src="/images/simple-design-icon.png" 
-                      alt="Simple Design" 
-                      className="w-16 h-16 mx-auto"
-                    />
+                    <div className="bg-primary/10 p-3 rounded-full">
+                      <img 
+                        src="/images/simple-design-icon.png" 
+                        alt="Simple Design" 
+                        className="w-16 h-16 mx-auto"
+                      />
+                    </div>
                   </div>
-                  <CardTitle>Simple Design</CardTitle>
+                  <CardTitle className="text-primary">Simple Design</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-gray-500 dark:text-gray-400 text-center">
@@ -73,16 +77,18 @@ export default function Home() {
                   </p>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="border-primary/20 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <CardHeader>
                   <div className="flex justify-center">
-                    <img 
-                      src="/videos/customization-icon-animated.gif" 
-                      alt="Easy to Customize" 
-                      className="w-16 h-16 mx-auto"
-                    />
+                    <div className="bg-primary/10 p-3 rounded-full">
+                      <img 
+                        src="/videos/customization-icon-animated.gif" 
+                        alt="Easy to Customize" 
+                        className="w-16 h-16 mx-auto"
+                      />
+                    </div>
                   </div>
-                  <CardTitle>Easy to Customize</CardTitle>
+                  <CardTitle className="text-primary">Easy to Customize</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-gray-500 dark:text-gray-400 text-center">
@@ -90,16 +96,18 @@ export default function Home() {
                   </p>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="border-primary/20 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <CardHeader>
                   <div className="flex justify-center">
-                    <img 
-                      src="/images/responsive-icon.png" 
-                      alt="Responsive Design" 
-                      className="w-16 h-16 mx-auto"
-                    />
+                    <div className="bg-primary/10 p-3 rounded-full">
+                      <img 
+                        src="/images/responsive-icon.png" 
+                        alt="Responsive Design" 
+                        className="w-16 h-16 mx-auto"
+                      />
+                    </div>
                   </div>
-                  <CardTitle>Responsive</CardTitle>
+                  <CardTitle className="text-primary">Responsive</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-gray-500 dark:text-gray-400 text-center">
@@ -116,7 +124,7 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="grid gap-10 px-10 md:gap-16 lg:grid-cols-2">
               <div className="space-y-4">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">
                   About SimplePage
                 </h2>
                 <p className="text-gray-500 dark:text-gray-400">
@@ -127,7 +135,7 @@ export default function Home() {
                   Built with modern web technologies, SimplePage provides a solid foundation 
                   that you can build upon to create amazing digital experiences.
                 </p>
-                <Button asChild>
+                <Button asChild className="bg-primary hover:bg-primary/90">
                   <a href="#contact">Contact Us</a>
                 </Button>
               </div>
@@ -135,7 +143,7 @@ export default function Home() {
                 <img 
                   src="/images/about-section-image.jpg" 
                   alt="About SimplePage" 
-                  className="rounded-xl w-full h-96 object-cover"
+                  className="rounded-xl w-full h-96 object-cover border-2 border-primary/10"
                 />
               </div>
             </div>
@@ -147,7 +155,7 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">
                   Get In Touch
                 </h2>
                 <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
@@ -155,7 +163,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="w-full max-w-sm space-y-2">
-                <Button className="w-full" asChild>
+                <Button className="w-full bg-primary hover:bg-primary/90" asChild>
                   <a href="mailto:hello@example.com">Email Us</a>
                 </Button>
               </div>
@@ -181,6 +189,13 @@ export default function Home() {
     </div>
   )
 }
+
+
+
+
+
+
+
 
 
 
