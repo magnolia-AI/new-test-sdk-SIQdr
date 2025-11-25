@@ -58,7 +58,13 @@ export default function Home() {
             <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3">
               <Card>
                 <CardHeader>
-                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mx-auto" />
+                  <div className="flex justify-center">
+                    <img 
+                      src="/images/simple-design-icon.png" 
+                      alt="Simple Design" 
+                      className="w-16 h-16 mx-auto"
+                    />
+                  </div>
                   <CardTitle>Simple Design</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -69,7 +75,13 @@ export default function Home() {
               </Card>
               <Card>
                 <CardHeader>
-                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mx-auto" />
+                  <div className="flex justify-center">
+                    <img 
+                      src="/images/customization-icon.png" 
+                      alt="Easy to Customize" 
+                      className="w-16 h-16 mx-auto"
+                    />
+                  </div>
                   <CardTitle>Easy to Customize</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -80,7 +92,13 @@ export default function Home() {
               </Card>
               <Card>
                 <CardHeader>
-                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mx-auto" />
+                  <div className="flex justify-center">
+                    <img 
+                      src="/images/responsive-icon.png" 
+                      alt="Responsive Design" 
+                      className="w-16 h-16 mx-auto"
+                    />
+                  </div>
                   <CardTitle>Responsive</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -163,4 +181,7 @@ export default function Home() {
     </div>
   )
 }
+
+
+
 
